@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.biografiaFoto{
+    width: 100%;
+}
+
+header nav ul li{
+    list-style: none;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: black;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+header h1{
+    font-size: 24px;
+}
+header nav ul li a:hover{
+  color: rgb(255, 0, 0);
+}
+header nav ul li a{
+  transition: .5s ease-in-out;
+}
+.fa-2x{
+  display: none;
+}
+
+@media(max-width:1024px){
+  .fa-2x{
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  header{
+    position: fixed;
+    flex-direction: column;
+    transform: translateX(-200px);
+    transition: .5s ease-in-out;
+    background-color: rgb(0, 83, 127);
+    height: 100%;
+    width: 200px;
+    z-index: 3;
+  }
+  header h1{
+    text-align: center;
+  }
+  header nav ul{
+    margin-top: 10px;
+  }
+  .tulaActiva{
+    transform: translateX(0px);
+  }
+}
